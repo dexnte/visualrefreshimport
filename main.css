@@ -1,0 +1,276 @@
+.theme-dark {
+  --msgbg: var(--brand-500);
+  --msghv: var(--brand-600);
+  --msgfg: #ffffff;
+}
+.theme-light {
+  --msgbg: var(--brand-400);
+  --msghv: var(--brand-500);
+  --msgfg: var(--brand-1000);
+}
+
+.messageListItem__5126c[data-is-self="true"] {
+  .contents_c19a55>.messageContent_c19a55:not(:empty) {
+    background: var(--msgbg);
+    -ms-flex-align: end;
+    color: var(--msgfg);
+  }
+
+  .contents_c19a55:hover>.messageContent_c19a55:not(:empty) {
+    background: var(--msghv);
+  }
+}
+
+[class^=contents_]>[class*=messageContent_]:not(:empty) {
+  margin-left: 0;
+  padding: 12px 16px;
+  border-bottom-left-radius: 0px !important;
+  display: inline-block;
+  max-width: calc(100% - 24px);
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  box-shadow: 4px 4px 21px 13px rgba(0, 0, 0, 0.05);
+}
+
+ [class^=contents_]:hover>[class*=messageContent_]:not(:empty) {
+     background: rgba(0, 0, 0, 0.1);
+}
+.theme-light {
+[class^=contents_]>[class*=messageContent_]:not(:empty) {
+  margin-left: 0;
+  padding: 12px 16px;
+  border-bottom-left-radius: 0px !important;
+  display: inline-block;
+  max-width: calc(100% - 24px);
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  box-shadow: 4px 4px 21px 13px rgba(0, 0, 0, 0.05);
+}
+
+
+ [class*=mentioned_] [class^=contents_]>[class*=messageContent_]:not(:empty) {
+  background: rgba(255, 200, 0, 0.25);
+}
+
+ [class*=replying_][class*=groupStart_]>[class^=contents_]>[class*=messageContent_]:not(:empty) {
+  background: var(--brand-700);
+}
+
+ [class*=replying_]>[class^=contents_]>[class*=messageContent_]:not(:empty) {
+  background: var(--brand-700);
+}
+
+ [class*=replying_]:hover [class*=groupStart_]>[class^=contents_]>[class*=messageContent_]:not(:empty) {
+  background: var(--brand-800);
+}
+
+ [class*=replying_]:hover>[class^=contents_]>[class*=messageContent_]:not(:empty) {
+  background: var(--brand-800);
+}
+
+
+/* credit
+*/
+
+#app-mount .messageListItem__5126c[data-is-self="true"] {
+  margin-left: auto;
+  width: auto;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .container_b7e1cb {
+  direction: rtl;
+  text-align: right;
+  padding-right: 8px;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .groupStart__5126c:not(.markup__75297) {
+  text-align: right;
+  padding-right: 8px;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .groupStart__5126c>.contents_c19a55>.markup__75297 {
+  text-align: left;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .contents_c19a55 {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"].message__5126c.selected__5126c .contents_c19a55 {
+  width: 100%;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .timestamp_c19a55 {
+  left: unset;
+  right: 8px;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .replying__5126c .contents_c19a55 .messageContent_c19a55::before,
+#app-mount .messageListItem__5126c[data-is-self="true"] .mentioned__5126c .contents_c19a55 .messageContent_c19a55::before {
+  left: unset;
+  right: 0;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .contents_c19a55 .messageContent_c19a55,
+#app-mount .messageListItem__5126c[data-is-self="true"] a:not(.embed__623de .embedAuthorNameLink__623de),
+#app-mount .messageListItem__5126c[data-is-self="true"] .repliedMessage_c19a55 {
+  margin-left: auto;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 12px !important;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .embedAuthor__623de {
+  direction: ltr;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .avatar_c19a55 {
+  left: unset;
+  right: 4px;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .avatarDecoration_c19a55 {
+  left: unset;
+  right: 0px;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .header_c19a55 {
+  display: flex;
+  flex-direction: row;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .header_c19a55 span {
+  margin-left: 0.25rem;
+  margin-right: unset;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"]>.messageContent_c19a55 {
+  overflow: visible;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] pre {
+  max-width: 100%;
+}
+
+#app-mount .contents_c19a55 .messageContent_c19a55 {
+  /* padding: 0; */
+  margin-left: unset;
+  width: fit-content;
+  max-width: 750px;
+}
+
+#app-mount .contents_c19a55 .messageContent_c19a55>[class*="markup_"] {
+  max-width: 750px;
+}
+
+#app-mount .contents_c19a55 {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+#app-mount .message__5126c {
+  max-width: 100%;
+}
+
+/* #app-mount .message__5126c.compact_c19a55.wrapper_c19a55 .messageContent_c19a55 {
+    display: flex;
+} */
+
+#app-mount .compact_c19a55.wrapper_c19a55 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#app-mount .mentioned__5126c.compact_c19a55 .contents_c19a55 .messageContent_c19a55::before:not(.messageListItem__5126c[data-is-self="true"]),
+#app-mount .replying__5126c.compact_c19a55 .contents_c19a55 .messageContent_c19a55::before:not(.messageListItem__5126c[data-is-self="true"]) {
+  left: 4px;
+}
+
+#app-mount .mentioned__5126c .contents_c19a55 .messageContent_c19a55::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 3px;
+  margin: 8px 0;
+  z-index: 1;
+}
+
+#app-mount .repliedMessage_c19a55 {
+  padding: 6px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+#app-mount .replying__5126c .contents_c19a55 .messageContent_c19a55::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 3px;
+  margin: 8px 0;
+  z-index: 1;
+}
+
+#app-mount .messageListItem__5126c[data-is-self="true"] .repliedMessage_c19a55:before,
+#app-mount .mentioned__5126c:before,
+.replying__5126c:before,
+.spine__9271d.cozy__9271d,
+.message__5126c::after,
+.repliedMessageClickableSpine_c19a55 {
+  display: none;
+}
+
+/** 
+ * moves message actions on message
+ * by glaciercherrygatorade on discord
+ */
+[class*="buttonContainer"]:has([class*="buttons__"]) {
+  position: absolute;
+}
+
+/* aligns self messages */
+#app-mount .messageListItem__5126c[data-is-self="true"] [class*="buttonContainer"]:has([class*="buttons__"]) {
+  margin-right: 100%;
+  transform: rotate(180deg) scaley(-1);
+
+  .button_f7ecac {
+    transform: scalex(-1);
+  }
+}
+
+/* aligns non-groupStart messages */
+.messageListItem__5126c>.message__5126c:not(.groupStart__5126c) {
+  [class*="buttonContainer__"]>.buttons__5126c>.buttonsInner__5126c {
+    margin-top: 10px;
+  }
+}
+.avatar_c19a55,
+.avatarDecoration_c19a55 {
+  bottom: 8px;
+  /* bring pfp to bottom of messages */
+}
+.messageListItem__5126c {
+  &[data-is-self="true"]>.message__5126c:not(.groupStart__5126c) 
+  .contents_c19a55>.messageContent_c19a55:not(:empty) {
+    border-top-right-radius: 0px;
+      border-top-left-radius: 12px !important;
+  }
+>.message__5126c:not(.groupStart__5126c)
+ [class^=contents_]>[class*=messageContent_]:not(:empty) {
+  border-top-left-radius: 0px !important;
+
+}
+}
+.header_c19a55 {
+  padding: 4px 12px;
+}
